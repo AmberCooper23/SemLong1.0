@@ -235,7 +235,7 @@ GameObject:
   - component: {fileID: 23703204}
   - component: {fileID: 23703203}
   - component: {fileID: 23703201}
-  - component: {fileID: 23703205}
+  - component: {fileID: 23703207}
   - component: {fileID: 23703206}
   m_Layer: 6
   m_Name: Player1
@@ -338,25 +338,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &23703205
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 23703200}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d53f715951f87f045a5b4f7a027d7bb6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  runSpeed: 0.6
-  jumpForce: 2.6
-  groundCheckPoint: {fileID: 295356543}
-  groundCheckRadius: 0
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 2048
 --- !u!70 &23703206
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -392,6 +373,30 @@ CapsuleCollider2D:
   m_Offset: {x: -0.02, y: -0.19}
   m_Size: {x: 0.8, y: 2.56}
   m_Direction: 0
+--- !u!114 &23703207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 23703200}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a22f490bdf11cf84d857961e45b07e1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player1: {fileID: 0}
+  player2: {fileID: 0}
+  rb1: {fileID: 23703201}
+  rb2: {fileID: 1108755428}
+  spatulaPrefab: {fileID: 0}
+  SpatulaSpeed: 50
+  groundCheckRadius: 0.1
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 2048
+  jumpHeight: 0.5
+  movementSpeed: 7
 --- !u!1 &43454035
 GameObject:
   m_ObjectHideFlags: 0
@@ -1538,7 +1543,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &652105650
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1724,6 +1729,62 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.8818, y: 1.733, z: 0}
   m_LocalScale: {x: 0.65593404, y: 0.7051189, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &724518730
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 724518732}
+  - component: {fileID: 724518731}
+  m_Layer: 0
+  m_Name: movementManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &724518731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 724518730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a22f490bdf11cf84d857961e45b07e1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player1: {fileID: 23703200}
+  player2: {fileID: 1108755426}
+  rb1: {fileID: 23703201}
+  rb2: {fileID: 1108755428}
+  spatulaPrefab: {fileID: 5727160597027372586, guid: 38c0829ee352f5e4682c11da16d688b0, type: 3}
+  SpatulaSpeed: 50
+  groundCheckRadius: 0.1
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 2048
+  jumpHeight: 2000
+  movementSpeed: 7
+--- !u!4 &724518732
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 724518730}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.7039514, y: 0.16776228, z: -0.10374637}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -2023,7 +2084,7 @@ GameObject:
   - component: {fileID: 925483419}
   m_Layer: 0
   m_Name: Shelves
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2346,7 +2407,6 @@ GameObject:
   - component: {fileID: 1108755428}
   - component: {fileID: 1108755427}
   - component: {fileID: 1108755431}
-  - component: {fileID: 1108755432}
   - component: {fileID: 1108755433}
   m_Layer: 6
   m_Name: Player2
@@ -2496,34 +2556,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a22f490bdf11cf84d857961e45b07e1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spatula: {fileID: 5727160597027372586, guid: 38c0829ee352f5e4682c11da16d688b0, type: 3}
+  player1: {fileID: 0}
+  player2: {fileID: 0}
+  rb1: {fileID: 0}
+  rb2: {fileID: 0}
+  spatulaPrefab: {fileID: 0}
   SpatulaSpeed: 50
-  JumpHeight: 1500
-  MovementSpeed: 10
   groundCheckRadius: 0.1
   groundLayer:
     serializedVersion: 2
-    m_Bits: 0
-  isGrounded: 0
---- !u!114 &1108755432
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1108755426}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d53f715951f87f045a5b4f7a027d7bb6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  runSpeed: 0.6
-  jumpForce: 2.6
-  groundCheckPoint: {fileID: 0}
-  groundCheckRadius: 0
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 2048
+  jumpHeight: 2000
+  movementSpeed: 7
 --- !u!70 &1108755433
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -3174,7 +3218,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1645850652
 Transform:
   m_ObjectHideFlags: 0
@@ -3992,3 +4036,4 @@ SceneRoots:
   - {fileID: 970776232}
   - {fileID: 786270579}
   - {fileID: 1054705960}
+  - {fileID: 724518732}

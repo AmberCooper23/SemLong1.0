@@ -6,9 +6,10 @@ using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.InputSystem; //Make sure to have this installed on Unity by going to Window >> Package Manager>>Choose Unity Registery>>
-                               // Search for Input Systems then install
+   /*                            // Search for Input Systems then install
 public class Player1Movement : MonoBehaviour //Attach to player 1 object
 {
+    
     public float runSpeed = 0.6f; // Running speed.
     public float jumpForce = 2.6f; // Jump height.
 
@@ -99,9 +100,10 @@ public class Player1Movement : MonoBehaviour //Attach to player 1 object
        
     }
 }
+   
 
     #region ORIGINAL SCRIPT:
-/*
+
 private GameObject Player1;
 private Rigidbody2D rb1;
 
@@ -126,10 +128,10 @@ private DirectionCheck direction;
 
 private Vector2 Input;
 
-public float groundCheckRadius = 0.1f; Used to prevent player from jumping through shelves(not intended so all lines relating to this are commeneted out)
+public float groundCheckRadius = 0.1f; // Used to prevent player from jumping through shelves(not intended so all lines relating to this are commeneted out)
  public LayerMask groundLayer;
 public bool isGrounded;
-Start is called before the first frame update
+// Start is called before the first frame update
 
 private void Awake()
 {
@@ -169,7 +171,7 @@ void Start()
 public class PlayerController1
 {
     private Vector2 Vel = new Vector2();
-/Players velocity
+//Players velocity
 
 
  }
@@ -192,19 +194,18 @@ private struct DirectionCheck //Gets direction player is moving in to adjust dir
 }
 
 
-     private void FixedUpdate()
- {
-     Movement();
- }
       void FixedUpdate()
  {
+     Movement();
+ 
+ 
    Vector2 position = rb1.position;
  position.y -= groundCheckRadius;
  Collider2D hit = Physics2D.OverlapPoint(position, groundLayer);
  isGrounded = hit != null;
  if (isGrounded)
  {
-  Prevent the object from moving through the platform
+ // Prevent the object from moving through the platform
    rb1.velocity = new Vector2(rb1.velocity.x, 0);
  }
   }    
@@ -400,5 +401,5 @@ private void OnDisable()
 }
 
 
-}*/
-#endregion
+}
+#endregion */
