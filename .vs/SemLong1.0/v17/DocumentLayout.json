@@ -1,21 +1,33 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\SemesterLongKak\\SemLong1.0\\",
+  "WorkspaceRootPath": "C:\\GitHub\\SemLong1.0\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9B511A1C-4000-02AF-7BD9-1F7311CFDA11}|Assembly-CSharp.csproj|c:\\semesterlongkak\\semlong1.0\\assets\\playerscripts\\player2movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9B511A1C-4000-02AF-7BD9-1F7311CFDA11}|Assembly-CSharp.csproj|solutionrelative:assets\\playerscripts\\player2movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9B511A1C-4000-02AF-7BD9-1F7311CFDA11}|Assembly-CSharp.csproj|c:\\github\\semlong1.0\\assets\\ingredients\\ingredientcollection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B511A1C-4000-02AF-7BD9-1F7311CFDA11}|Assembly-CSharp.csproj|solutionrelative:assets\\ingredients\\ingredientcollection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9B511A1C-4000-02AF-7BD9-1F7311CFDA11}|Assembly-CSharp.csproj|c:\\semesterlongkak\\semlong1.0\\assets\\shelves\\shelfproperties.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9B511A1C-4000-02AF-7BD9-1F7311CFDA11}|Assembly-CSharp.csproj|C:\\GitHub\\SemLong1.0\\assets\\score\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B511A1C-4000-02AF-7BD9-1F7311CFDA11}|Assembly-CSharp.csproj|solutionrelative:assets\\score\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B511A1C-4000-02AF-7BD9-1F7311CFDA11}|Assembly-CSharp.csproj|C:\\GitHub\\SemLong1.0\\assets\\score\\scoremanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B511A1C-4000-02AF-7BD9-1F7311CFDA11}|Assembly-CSharp.csproj|solutionrelative:assets\\score\\scoremanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B511A1C-4000-02AF-7BD9-1F7311CFDA11}|Assembly-CSharp.csproj|C:\\GitHub\\SemLong1.0\\assets\\shelves\\shelfproperties.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9B511A1C-4000-02AF-7BD9-1F7311CFDA11}|Assembly-CSharp.csproj|solutionrelative:assets\\shelves\\shelfproperties.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9B511A1C-4000-02AF-7BD9-1F7311CFDA11}|Assembly-CSharp.csproj|C:\\SemesterLongKak\\SemLong1.0\\assets\\misc. scripts\\quitscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9B511A1C-4000-02AF-7BD9-1F7311CFDA11}|Assembly-CSharp.csproj|C:\\GitHub\\SemLong1.0\\assets\\playerscripts\\player2movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B511A1C-4000-02AF-7BD9-1F7311CFDA11}|Assembly-CSharp.csproj|solutionrelative:assets\\playerscripts\\player2movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B511A1C-4000-02AF-7BD9-1F7311CFDA11}|Assembly-CSharp.csproj|C:\\GitHub\\SemLong1.0\\assets\\misc. scripts\\quitscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9B511A1C-4000-02AF-7BD9-1F7311CFDA11}|Assembly-CSharp.csproj|solutionrelative:assets\\misc. scripts\\quitscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9B511A1C-4000-02AF-7BD9-1F7311CFDA11}|Assembly-CSharp.csproj|C:\\SemesterLongKak\\SemLong1.0\\assets\\playerscripts\\player1movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9B511A1C-4000-02AF-7BD9-1F7311CFDA11}|Assembly-CSharp.csproj|C:\\GitHub\\SemLong1.0\\assets\\playerscripts\\player1movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9B511A1C-4000-02AF-7BD9-1F7311CFDA11}|Assembly-CSharp.csproj|solutionrelative:assets\\playerscripts\\player1movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -30,24 +42,60 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ShelfProperties.cs",
-              "DocumentMoniker": "C:\\SemesterLongKak\\SemLong1.0\\Assets\\Shelves\\ShelfProperties.cs",
-              "RelativeDocumentMoniker": "Assets\\Shelves\\ShelfProperties.cs",
-              "ToolTip": "C:\\SemesterLongKak\\SemLong1.0\\Assets\\Shelves\\ShelfProperties.cs",
-              "RelativeToolTip": "Assets\\Shelves\\ShelfProperties.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAYwBYAAAAdAAAA",
+              "DocumentIndex": 2,
+              "Title": "ScoreManager.cs",
+              "DocumentMoniker": "C:\\GitHub\\SemLong1.0\\Assets\\Score\\ScoreManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Score\\ScoreManager.cs",
+              "ToolTip": "C:\\GitHub\\SemLong1.0\\Assets\\Score\\ScoreManager.cs",
+              "RelativeToolTip": "Assets\\Score\\ScoreManager.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABMAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-14T10:50:48.754Z",
+              "WhenOpened": "2024-06-14T16:11:18.577Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GameManager.cs",
+              "DocumentMoniker": "C:\\GitHub\\SemLong1.0\\Assets\\Score\\GameManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Score\\GameManager.cs",
+              "ToolTip": "C:\\GitHub\\SemLong1.0\\Assets\\Score\\GameManager.cs",
+              "RelativeToolTip": "Assets\\Score\\GameManager.cs",
+              "ViewState": "AQIAAHAAAAAAAAAAAAAAAIAAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T16:16:27.766Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "IngredientCollection.cs",
+              "DocumentMoniker": "C:\\GitHub\\SemLong1.0\\Assets\\Ingredients\\IngredientCollection.cs",
+              "RelativeDocumentMoniker": "Assets\\Ingredients\\IngredientCollection.cs",
+              "ToolTip": "C:\\GitHub\\SemLong1.0\\Assets\\Ingredients\\IngredientCollection.cs",
+              "RelativeToolTip": "Assets\\Ingredients\\IngredientCollection.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAYwLkAAACbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T16:10:23.458Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
+              "Title": "ShelfProperties.cs",
+              "DocumentMoniker": "C:\\GitHub\\SemLong1.0\\Assets\\Shelves\\ShelfProperties.cs",
+              "RelativeDocumentMoniker": "Assets\\Shelves\\ShelfProperties.cs",
+              "ToolTip": "C:\\GitHub\\SemLong1.0\\Assets\\Shelves\\ShelfProperties.cs",
+              "RelativeToolTip": "Assets\\Shelves\\ShelfProperties.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T10:50:48.754Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "quitScript.cs",
-              "DocumentMoniker": "C:\\SemesterLongKak\\SemLong1.0\\Assets\\Misc. Scripts\\quitScript.cs",
+              "DocumentMoniker": "C:\\GitHub\\SemLong1.0\\Assets\\Misc. Scripts\\quitScript.cs",
               "RelativeDocumentMoniker": "Assets\\Misc. Scripts\\quitScript.cs",
-              "ToolTip": "C:\\SemesterLongKak\\SemLong1.0\\Assets\\Misc. Scripts\\quitScript.cs",
+              "ToolTip": "C:\\GitHub\\SemLong1.0\\Assets\\Misc. Scripts\\quitScript.cs",
               "RelativeToolTip": "Assets\\Misc. Scripts\\quitScript.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -55,24 +103,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "Player2Movement.cs",
-              "DocumentMoniker": "C:\\SemesterLongKak\\SemLong1.0\\Assets\\PlayerScripts\\Player2Movement.cs",
+              "DocumentMoniker": "C:\\GitHub\\SemLong1.0\\Assets\\PlayerScripts\\Player2Movement.cs",
               "RelativeDocumentMoniker": "Assets\\PlayerScripts\\Player2Movement.cs",
-              "ToolTip": "C:\\SemesterLongKak\\SemLong1.0\\Assets\\PlayerScripts\\Player2Movement.cs",
+              "ToolTip": "C:\\GitHub\\SemLong1.0\\Assets\\PlayerScripts\\Player2Movement.cs",
               "RelativeToolTip": "Assets\\PlayerScripts\\Player2Movement.cs",
               "ViewState": "AQIAADsAAAAAAAAAAAAgwGkAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T08:41:22.712Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-03T08:41:22.712Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Player1Movement.cs",
-              "DocumentMoniker": "C:\\SemesterLongKak\\SemLong1.0\\Assets\\PlayerScripts\\Player1Movement.cs",
+              "DocumentMoniker": "C:\\GitHub\\SemLong1.0\\Assets\\PlayerScripts\\Player1Movement.cs",
               "RelativeDocumentMoniker": "Assets\\PlayerScripts\\Player1Movement.cs",
-              "ToolTip": "C:\\SemesterLongKak\\SemLong1.0\\Assets\\PlayerScripts\\Player1Movement.cs",
+              "ToolTip": "C:\\GitHub\\SemLong1.0\\Assets\\PlayerScripts\\Player1Movement.cs",
               "RelativeToolTip": "Assets\\PlayerScripts\\Player1Movement.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAALAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

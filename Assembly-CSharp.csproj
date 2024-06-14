@@ -103,6 +103,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
     <Compile Include="Assets\Misc. Scripts\quitScript.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
+    <Compile Include="Assets\Ingredients\IngredientCollection.cs" />
     <Compile Include="Assets\Enemy\EnemyGen.cs" />
     <Compile Include="Assets\Ingredients\IngredientGen.cs" />
     <Compile Include="Assets\Score\Enemy2Script.cs" />

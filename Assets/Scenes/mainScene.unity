@@ -237,6 +237,7 @@ GameObject:
   - component: {fileID: 23703201}
   - component: {fileID: 23703207}
   - component: {fileID: 23703206}
+  - component: {fileID: 23703208}
   m_Layer: 6
   m_Name: Player1
   m_TagString: Player1
@@ -394,6 +395,19 @@ MonoBehaviour:
   movementSpeed: 7
   jumpForce: 0
   jumpCooldown: 0.5
+--- !u!114 &23703208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 23703200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6aae0544b4be7445ba0a3f55d1472c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 948431688}
 --- !u!1 &43454035
 GameObject:
   m_ObjectHideFlags: 0
@@ -2552,6 +2566,8 @@ MonoBehaviour:
   scoreText: {fileID: 2060932412}
   timerText: {fileID: 1617265221}
   scoreManager: {fileID: 1814464199}
+  arrToppingsIndex: 0000000000000000000000000000000000000000000000000000000000000000
+  numToppings: 0
 --- !u!4 &948431689
 Transform:
   m_ObjectHideFlags: 0
@@ -2803,6 +2819,7 @@ GameObject:
   - component: {fileID: 1108755427}
   - component: {fileID: 1108755431}
   - component: {fileID: 1108755433}
+  - component: {fileID: 1108755434}
   m_Layer: 6
   m_Name: Player2
   m_TagString: Player2
@@ -2995,6 +3012,19 @@ CapsuleCollider2D:
   m_Offset: {x: -0.02, y: -0.19}
   m_Size: {x: 0.8, y: 2.56}
   m_Direction: 0
+--- !u!114 &1108755434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1108755426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6aae0544b4be7445ba0a3f55d1472c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 948431688}
 --- !u!1 &1166462578
 GameObject:
   m_ObjectHideFlags: 0

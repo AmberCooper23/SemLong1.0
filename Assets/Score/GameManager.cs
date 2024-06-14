@@ -13,11 +13,14 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI timerText;
 
     public ScoreManager scoreManager;
+    
 
     private string[] pizzaToppings = { "Pepperoni", "Mushrooms", "Onions", "Sausage", "Bacon", "Extra Cheese", "Black Olives", "Green Peppers" };
+    public int[] arrToppingsIndex = new int[8];
     private string currentOrder;
     private float timer = 30f;
     private bool bonusAchieved = false;
+    public int numToppings;
    
     void Start()
     {
@@ -53,11 +56,12 @@ public class GameManager : MonoBehaviour
     void GenerateOrder()
     {
         currentOrder = "Order: ";
-        int numToppings = Random.Range(1, 4); // Random number of toppings between 1 and 3
+        numToppings = Random.Range(1, 4); // Random number of toppings between 1 and 3
 
         for (int i = 0; i < numToppings; i++)
         {
             int toppingIndex = Random.Range(0, pizzaToppings.Length);
+            arrToppingsIndex[i] = toppingIndex;
             currentOrder += pizzaToppings[toppingIndex] + ", ";
         }
 
@@ -65,25 +69,25 @@ public class GameManager : MonoBehaviour
         UpdateOrderText();
     }
 
-    public void CheckOrder(string[] playerToppings)
+    public void CheckOrder(string[] playerToppings,int arrayLength)
     {
         string[] orderToppings = currentOrder.Substring(7).Split(',');
         bool orderCompleted = true;
 
-        if (orderToppings.Length != playerToppings.Length)
+        if (orderToppings.Length != arrayLength)
             orderCompleted = false;
         else
         {
             foreach (string topping in orderToppings)
             {
                 bool toppingFound = false;
-                foreach (string playerTopping in playerToppings)
+               foreach (string playerTopping in playerToppings)
                 {
                     if (topping.Trim() == playerTopping.Trim())
                     {
                         toppingFound = true;
                         break;
-                    }
+                   }
                 }
                 if (!toppingFound)
                 {
@@ -99,6 +103,7 @@ public class GameManager : MonoBehaviour
             GenerateOrder(); // Generate new order
             timer = 30f; // Reset timer
             bonusAchieved = false;
+            orderCompleted = false; //Prevents score from being added without the order being complete
         }
     }
     #endregion
@@ -117,6 +122,11 @@ public class GameManager : MonoBehaviour
     void UpdateTimerText()
     {
         timerText.text = "Time: " + Mathf.Round(timer).ToString();
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        
     }
 }
 #endregion
