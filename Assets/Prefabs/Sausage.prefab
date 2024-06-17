@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 6977696179924749703}
   - component: {fileID: 755492433910448089}
   - component: {fileID: 7434478967342896556}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: Sausage
-  m_TagString: Untagged
+  m_TagString: Sauasage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

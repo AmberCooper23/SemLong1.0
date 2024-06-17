@@ -8,6 +8,15 @@ TagManager:
   - Player1
   - Player2
   - Ground
+  - Bacon
+  - BlackOlives
+  - Cheese
+  - Peppers
+  - Mushroom
+  - Onion
+  - Pepperoni
+  - Pineapple
+  - Sauasage
   layers:
   - Default
   - TransparentFX

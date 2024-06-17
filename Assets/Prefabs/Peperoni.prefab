@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 6880834171377885174}
   - component: {fileID: 7686899195103535237}
   - component: {fileID: 9133272916374254045}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: Peperoni
-  m_TagString: Untagged
+  m_TagString: Pepperoni
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

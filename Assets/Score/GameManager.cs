@@ -20,6 +20,7 @@ public class GameManager : MonoBehaviour
     private bool bonusAchieved = false;
     public int numToppings;
 
+    public endGame endGame;
     void Start()
     {
         GenerateOrder();
@@ -45,10 +46,11 @@ public class GameManager : MonoBehaviour
         }
         else
         {
+            endGame.EndGameCondition();
             // Time's up, generate a new order and reset the timer
-            GenerateOrder();
-            timer = 30f;
-            bonusAchieved = false;
+            //GenerateOrder();
+            //timer = 30f;
+            //bonusAchieved = false;
         }
     }
 
@@ -126,4 +128,6 @@ public class GameManager : MonoBehaviour
         timerText.text = "Time: " + Mathf.Round(timer).ToString();
     }
     #endregion
+
+
 }

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5980640299759323837}
   m_Layer: 7
   m_Name: GreenPepper
-  m_TagString: Untagged
+  m_TagString: Peppers
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
