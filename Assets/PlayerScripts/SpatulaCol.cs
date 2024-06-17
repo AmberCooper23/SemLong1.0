@@ -1,19 +1,17 @@
 using System.Collections;
-using System.Collections.Generic;
-using System.Net;
-using Unity.VisualScripting;
 using UnityEngine;
 
-public class SpatulaCol : MonoBehaviour //NB Add this script to the spatula object before you make it a prefab!!!
+public class SpatulaCol : MonoBehaviour
 {
     private GameObject spatula;
+    public float lifeTime = 2f; // Time in seconds before the spatula is destroyed
+    public AudioClip hitSound; // Sound to play when spatula hits an enemy
 
     // Start is called before the first frame update
     void Start()
     {
         spatula = this.gameObject;
-        //spatula.AddComponent<Rigidbody2D>();
-
+        StartCoroutine(DestroyAfterTime());
     }
 
     // Update is called once per frame
@@ -24,13 +22,24 @@ public class SpatulaCol : MonoBehaviour //NB Add this script to the spatula obje
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Destroy(spatula);
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            Destroy(collision.gameObject);
-
+            EnemyHealth enemyHealth = collision.gameObject.GetComponent<EnemyHealth>();
+            if (enemyHealth != null)
+            {
+                enemyHealth.TakeDamage(1); // Assume 1 damage per hit
+                if (hitSound != null)
+                {
+                    AudioSource.PlayClipAtPoint(hitSound, transform.position);
+                }
+            }
         }
+        Destroy(spatula); // Destroy the spatula after the collision
     }
 
-
+    IEnumerator DestroyAfterTime()
+    {
+        yield return new WaitForSeconds(lifeTime);
+        Destroy(spatula);
+    }
 }

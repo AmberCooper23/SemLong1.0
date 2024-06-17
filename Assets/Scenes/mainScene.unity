@@ -2563,7 +2563,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   orderText: {fileID: 164749646}
-  scoreText: {fileID: 2060932412}
+  player1ScoreText: {fileID: 2060932412}
+  player2ScoreText: {fileID: 2060932412}
   timerText: {fileID: 1617265221}
   scoreManager: {fileID: 1814464199}
   arrToppingsIndex: 0000000000000000000000000000000000000000000000000000000000000000
@@ -3551,6 +3552,53 @@ Transform:
   m_Children: []
   m_Father: {fileID: 673834272}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1487580327
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1487580329}
+  - component: {fileID: 1487580328}
+  m_Layer: 0
+  m_Name: EnemySpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1487580328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1487580327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ef20ec90edde5245abddd8286ed549b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyPrefab: {fileID: 8558950958614049266, guid: c451f4418fd15464c8ae12ead204b54f, type: 3}
+  spawnInterval: 2
+  enemyLifetime: 5
+--- !u!4 &1487580329
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1487580327}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.2636027, y: 1.1621227, z: -10.038653}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1503058611
 GameObject:
   m_ObjectHideFlags: 0
@@ -4316,9 +4364,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5a9917510b80a7488fd73610e0debbe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreText: {fileID: 2060932412}
-  player1Score: 0
-  player2Score: 0
+  player1ScoreText: {fileID: 2060932412}
+  player2ScoreText: {fileID: 2060932412}
 --- !u!4 &1814464200
 Transform:
   m_ObjectHideFlags: 0
@@ -4650,3 +4697,4 @@ SceneRoots:
   - {fileID: 786270579}
   - {fileID: 1054705960}
   - {fileID: 724518732}
+  - {fileID: 1487580329}

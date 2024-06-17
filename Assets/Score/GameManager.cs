@@ -1,4 +1,3 @@
-
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -6,14 +5,13 @@ using TMPro;
 
 public class GameManager : MonoBehaviour
 {
-
     #region INITIALISATION:
     public TextMeshProUGUI orderText;
-    public TextMeshProUGUI scoreText;
+    public TextMeshProUGUI player1ScoreText;
+    public TextMeshProUGUI player2ScoreText;
     public TextMeshProUGUI timerText;
 
     public ScoreManager scoreManager;
-    
 
     private string[] pizzaToppings = { "Pepperoni", "Mushrooms", "Onions", "Sausage", "Bacon", "Extra Cheese", "Black Olives", "Green Peppers" };
     public int[] arrToppingsIndex = new int[8];
@@ -21,7 +19,7 @@ public class GameManager : MonoBehaviour
     private float timer = 30f;
     private bool bonusAchieved = false;
     public int numToppings;
-   
+
     void Start()
     {
         GenerateOrder();
@@ -30,6 +28,7 @@ public class GameManager : MonoBehaviour
         UpdateTimerText();
     }
     #endregion
+
     void Update()
     {
         if (timer > 0)
@@ -39,7 +38,7 @@ public class GameManager : MonoBehaviour
 
             if (!bonusAchieved && timer <= 0)
             {
-                scoreManager.AddScore(5); // Bonus for completing order within 30 seconds
+                scoreManager.HandleCollision("Player1", 5); // Bonus for completing order within 30 seconds for Player1 (or you can decide based on logic)
                 bonusAchieved = true;
                 UpdateScoreText();
             }
@@ -52,6 +51,7 @@ public class GameManager : MonoBehaviour
             bonusAchieved = false;
         }
     }
+
     #region ORDERS:
     void GenerateOrder()
     {
@@ -69,7 +69,7 @@ public class GameManager : MonoBehaviour
         UpdateOrderText();
     }
 
-    public void CheckOrder(string[] playerToppings,int arrayLength)
+    public void CheckOrder(string[] playerToppings, int arrayLength)
     {
         string[] orderToppings = currentOrder.Substring(7).Split(',');
         bool orderCompleted = true;
@@ -81,13 +81,13 @@ public class GameManager : MonoBehaviour
             foreach (string topping in orderToppings)
             {
                 bool toppingFound = false;
-               foreach (string playerTopping in playerToppings)
+                foreach (string playerTopping in playerToppings)
                 {
                     if (topping.Trim() == playerTopping.Trim())
                     {
                         toppingFound = true;
                         break;
-                   }
+                    }
                 }
                 if (!toppingFound)
                 {
@@ -99,11 +99,12 @@ public class GameManager : MonoBehaviour
 
         if (orderCompleted)
         {
-            scoreManager.AddScore(10); // Increase score for completing order
+            scoreManager.HandleCollision("Player1", 10); // Increase score for completing order for Player1 (or logic based on player who completed)
             GenerateOrder(); // Generate new order
             timer = 30f; // Reset timer
             bonusAchieved = false;
-            orderCompleted = false; //Prevents score from being added without the order being complete
+            orderCompleted = false; // Prevents score from being added without the order being complete
+            UpdateScoreText(); // Update score text
         }
     }
     #endregion
@@ -116,20 +117,13 @@ public class GameManager : MonoBehaviour
 
     void UpdateScoreText()
     {
-        scoreText.text = ("Score: " + scoreManager.score.ToString());
+        player1ScoreText.text = "Player 1 Score: " + scoreManager.player1Score.ToString();
+        player2ScoreText.text = "Player 2 Score: " + scoreManager.player2Score.ToString();
     }
 
     void UpdateTimerText()
     {
         timerText.text = "Time: " + Mathf.Round(timer).ToString();
     }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        
-    }
+    #endregion
 }
-#endregion
-
-//values for bonus points + time frame for bonus points + point deduction for colliding with enemies TO CHANGE*
-
